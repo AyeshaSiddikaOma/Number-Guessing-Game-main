@@ -63,6 +63,11 @@ function display(guess) {
 
 function sms(sms) {
   blank.innerHTML = `<p>${sms}</p>`;
+  blank.style.cssText = `
+  font-size:30px;
+  margin:0 auto;
+  color:red;
+  `
 }
 
 function end() {
@@ -70,6 +75,19 @@ function end() {
   submit.setAttribute("disabled", "");
   p.classList.add("button");
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
+
+p.style.cssText = `
+  display: block;
+  padding: 5px 10px;
+  background: linear-gradient(135deg, #a92f5f, #c94678);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor:pointer;
+  margin-top:10px;
+`;
   last.appendChild(p);
   playGmae = false;
   newGame();
