@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my js</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lets Play Number Guessing Game</h1>
+      <p>You have to choose a random number between 1 and 10,if you can guess the number hidden in system you will be winner and <br><b>you can try only 10 times</b></p>
+      <form action="#">
+        <input type="text" id="input" />
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+
+      <div id="full">
+        <p>previous Guesses: <span  id="prev"></span></p>
+        <p>remaining chances: <span  id="remaining"></span></p>
+        <p id="blank"></p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
