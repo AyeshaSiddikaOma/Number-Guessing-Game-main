@@ -57,7 +57,7 @@ function check(guess) {
 function display(guess) {
   input.value = "";
   life++;
-  prev.innerHTML += ` ${guess}`;
+  prev.innerHTML += ` ${guess};`;
   remaining.innerHTML = `${11 - life}`;
 }
 
